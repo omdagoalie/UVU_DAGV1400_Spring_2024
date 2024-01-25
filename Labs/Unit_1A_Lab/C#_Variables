@@ -1,0 +1,23 @@
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myNum = 10;
+      myNum = 30; //Changing myNum's value
+      Console.WriteLine(myNum);
+      string myString = "Hello there!";
+      Console.WriteLine(myString);
+      double myDouble = 19.99;
+      Console.WriteLine(myDouble);
+      bool myBool = true;
+      Console.WriteLine(myBool);
+      char myChar = 'A';
+      myChar = 'B'; //Testing to see if it would change myChar's value
+      Console.WriteLine(myChar);
+     }
+  }
+}
