@@ -1,34 +1,31 @@
 using System;
-
-namespace MyApplication
+					
+public class Program
 {
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      //Part 1
-      //strings
-      string myName = "Om";
-      Console.WriteLine(myName);  
-      //boolean
-      bool myBool = true;
-      Console.WriteLine(myBool); 
-      //float
-      double myFloat = 20.98;
-      Console.WriteLine(myFloat);
-      //integer
-      int myInt = 9;
-      Console.WriteLine(myInt); 
-      //Part 2
-      //multiplying
-      Console.WriteLine(myInt * myFloat);
-      //dividing
-      Console.WriteLine(myInt / myFloat);
-      //Part 3
+	public static void Main()
+	{
+		//
+    //strings
+    string myName = "Om";
+    Console.WriteLine(myName);  
+    //boolean
+    bool myBool = true;
+    Console.WriteLine(myBool); 
+		//float
+    double myFloat = 20.98;
+    Console.WriteLine(myFloat);
+    //integer
+    int myInt = 9;
+    Console.WriteLine(myInt); 
+    //Part 2
+    //multiplying
+    Console.WriteLine(myInt * myFloat);
+    //dividing
+    Console.WriteLine(myInt / myFloat);
+    //Part 3
+		Console.WriteLine("Enter username:");
+		string userName = Console.ReadLine();
+		Console.WriteLine("Username is: " + userName);
       
-      
-      
-
-     }
-  }
+	}
 }
