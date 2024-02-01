@@ -1,0 +1,44 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+        //Challenge 1 temperature
+		//Console.WriteLine("Enter the current temperature in Celcius: ");
+		//int temp = Convert.ToInt32(Console.ReadLine());
+		//if (temp >= 30)
+			//{
+  			//Console.WriteLine("Stay hydrated and avoid being in the sun for too long");
+			//}
+		//else 
+		//{
+		//Console.WriteLine("Enjoy the nice weather");
+		//}
+
+        //Challenge2 test
+        //A = 100, 90. B = 89, 80. C = 79, 70. D = 69, 60. F = 50 and below
+        Console.WriteLine("Enter your grade: ");
+		int grade = Convert.ToInt32(Console.ReadLine());
+		if (grade >= 90 && grade <= 100)
+			{
+  			Console.WriteLine("A");
+			}
+		else if( grade >= 80 && grade <= 89)
+		{
+			Console.WriteLine("B");
+		}
+		else if( grade >= 70 && grade <= 79)
+		{
+			Console.WriteLine("C");
+		}
+		else if( grade >= 60 && grade <= 69)
+		{
+			Console.WriteLine("D");
+		}
+		else if( grade >= 0 && grade <= 59)
+		{
+			Console.WriteLine("F");
+		}
+	}
+}
