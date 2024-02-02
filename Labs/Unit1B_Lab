@@ -5,16 +5,16 @@ public class Program
 	public static void Main()
 	{
         //Challenge 1 temperature
-		//Console.WriteLine("Enter the current temperature in Celcius: ");
-		//int temp = Convert.ToInt32(Console.ReadLine());
-		//if (temp >= 30)
-			//{
-  			//Console.WriteLine("Stay hydrated and avoid being in the sun for too long");
-			//}
-		//else 
-		//{
-		//Console.WriteLine("Enjoy the nice weather");
-		//}
+		Console.WriteLine("Enter the current temperature in Celcius: ");
+		int temp = Convert.ToInt32(Console.ReadLine());
+		if (temp >= 30)
+			{
+  			Console.WriteLine("Stay hydrated and avoid being in the sun for too long");
+			}
+		else 
+		{
+		Console.WriteLine("Enjoy the nice weather");
+		}
 
         //Challenge2 test
         //A = 100, 90. B = 89, 80. C = 79, 70. D = 69, 60. F = 50 and below
