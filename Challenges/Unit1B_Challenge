@@ -1,0 +1,51 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+        //Challenge 1 temperature
+		Console.WriteLine("Enter the current temperature in Celcius: ");
+		int temp = Convert.ToInt32(Console.ReadLine());
+		if (temp >= 30)
+			{
+  			Console.WriteLine("Stay hydrated and avoid being in the sun for too long");
+			}
+		else if(temp <= 20 && temp >= 11)
+			{
+			Console.WriteLine("Wear a light jacket");
+			}
+		else if(temp <= 10 )
+			{
+			Console.WriteLine("Wear warm cloths light jacket");
+			}
+
+        //Challenge2 test
+        //A = 100, 90. B = 89, 80. C = 79, 70. D = 69, 60. F = 50 and below
+        Console.WriteLine("Enter your grade: ");
+		int grade = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Enter your classes name: ");
+		string className = Console.ReadLine();
+		
+		if (grade >= 90 && grade <= 100)
+			{
+  			Console.WriteLine("Your " + className + " grade is an A great work!");
+			}
+		else if( grade >= 80 && grade <= 89)
+		{
+			Console.WriteLine("Your " + className + " grade is an B good job!");
+		}
+		else if( grade >= 70 && grade <= 79)
+		{
+			Console.WriteLine("Your " + className + " grade is an C try to review more " + className + "topics and your grade will go up");
+		}
+		else if( grade >= 60 && grade <= 69)
+		{
+			Console.WriteLine("Your " + className + " grade is an D try to review more " + className + "topics and get more help from your teacher");
+		}
+		else if( grade >= 0 && grade <= 59)
+		{
+			Console.WriteLine("Your " + className + " grade is an D try to review more " + className + "topics, work with your teacher and try to get help from outside school");
+		}
+	}
+}
