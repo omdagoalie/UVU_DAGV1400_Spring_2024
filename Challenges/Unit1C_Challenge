@@ -4,6 +4,7 @@ public class Program
 {
 	public static void Main()
 	{
+		//First Part
 		Console.Write("Guess a number between 1 and 10: ");
 		int ourNumber = Convert.ToInt32(Console.ReadLine());
 		Random randInteger = new Random();
@@ -11,7 +12,7 @@ public class Program
 		for(int j = 0; j < 1; j++)
 		{
 			
-			newInteger = (randInteger.Next(0, 10));
+		newInteger = (randInteger.Next(0, 10));
 			Console.WriteLine(newInteger);
 			if (newInteger > ourNumber)
 			{
@@ -25,6 +26,19 @@ public class Program
 			{
 				Console.WriteLine("You guessed my number");
 			}
+		}
+		//Second Exercise
+		Console.Write("Enter your 1st favorite food: ");
+		string foodOne = Console.ReadLine();
+		Console.Write("Enter your 2nd favorite food: ");
+		string foodTwo = Console.ReadLine();
+		Console.Write("Enter your 3rd favorite food: ");
+		string foodThree = Console.ReadLine();
+		
+		string[] food = [foodOne, foodTwo, foodThree];
+		foreach (string i in food)
+		{
+			Console.WriteLine("I bet " + i + " taste good");
 		}
 	}
 }
