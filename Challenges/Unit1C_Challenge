@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.Write("Guess a number between 1 and 10: ");
+		int ourNumber = Convert.ToInt32(Console.ReadLine());
+		Random randInteger = new Random();
+		int newInteger = 0;
+		for(int j = 0; j < 1; j++)
+		{
+			
+			newInteger = (randInteger.Next(0, 10));
+			Console.WriteLine(newInteger);
+			if (newInteger > ourNumber)
+			{
+				Console.WriteLine("Your number is less than my number");
+			}
+			else if (newInteger < ourNumber)
+			{
+				Console.WriteLine("Your number is greater than my number");
+			}
+			else if (newInteger == ourNumber)
+			{
+				Console.WriteLine("You guessed my number");
+			}
+		}
+	}
+}
