@@ -1,0 +1,21 @@
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int myAddition = 100 + 50; //output should be 150
+      Console.WriteLine(myAddition); 
+      int mySubtraction = 200 - 89;//output should be 111
+      Console.WriteLine(mySubtraction);
+      Console.WriteLine(myAddition > mySubtraction); //Testing to see which var has the biggest number
+      int myMultiply = 50 * 100; //output should be 5000
+      Console.WriteLine(myMultiply);
+      int myDivide = 100 / 2;
+      Console.WriteLine(myDivide);
+      Console.WriteLine(myDivide < myMultiply && myAddition < mySubtraction);//should get false
+     }
+  }
+}
