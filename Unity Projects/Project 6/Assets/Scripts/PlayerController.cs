@@ -30,5 +30,10 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             Instantiate(bullet, blaster.position, bullet.transform.rotation);
         }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
     }
 }
