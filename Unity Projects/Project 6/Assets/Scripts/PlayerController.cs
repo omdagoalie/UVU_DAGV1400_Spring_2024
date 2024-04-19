@@ -10,9 +10,10 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10;
     public Transform blaster;
     public GameObject bullet;
+    public GameManager gameManager;
     void Start()
     {
-        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour
         if(transform.position.x > xRange){
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false){
             Instantiate(bullet, blaster.position, bullet.transform.rotation);
         }
 
