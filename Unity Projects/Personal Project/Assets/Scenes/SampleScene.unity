@@ -303,18 +303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c0d1610b073b54c9488e539b6a4fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2140609436}
-  turret: {fileID: 557474379336625670, guid: ce71a438a04dc994fa8e242ed3ebc417, type: 3}
-  bulletPrefab: {fileID: 430644755763728026, guid: 76476db58e635864ca6a213fed856781, type: 3}
-  bulletSpeed: 5
-  fireRate: 1
-  turretRotationSpeed: 2
-  gameTime: 60
-  titleScreen: {fileID: 2009919148}
-  gameOverScreen: {fileID: 13419443}
-  youWinScreen: {fileID: 1043601923}
-  isGameActive: 0
-  timer: 0
 --- !u!1 &253522634
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &921878229
 MonoBehaviour:
   m_ObjectHideFlags: 0

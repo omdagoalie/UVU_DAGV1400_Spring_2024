@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
     public GameObject gameOverText;
+    public AudioSource musicAudio;
+    public AudioSource soundEffect;
+    public AudioClip backgroundMusic;
+    public AudioClip gameOver;
 
     void Awake()
     {
@@ -15,6 +19,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameOverText = GameObject.Find("GameOverTxt");
+        musicAudio.clip = backgroundMusic;
+        soundEffect.clip = gameOver;
+        musicAudio.Play();
     }
 
     // Update is called once per frame
@@ -25,6 +32,8 @@ public class GameManager : MonoBehaviour
 
             EndGame();
             Debug.Log("Called Endgame");
+            musicAudio.Stop();
+            soundEffect.Play();
         }
         else
         {

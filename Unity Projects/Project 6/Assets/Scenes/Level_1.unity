@@ -988,6 +988,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGameOver: 0
   gameOverText: {fileID: 1893773315}
+  musicAudio: {fileID: 0}
+  soundEffect: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: b133f526c0223e644b7eca91d3735163, type: 3}
+  gameOver: {fileID: 8300000, guid: f7fd2bda62b639c428d8a5037f35b81e, type: 3}
 --- !u!1001 &1823441159
 PrefabInstance:
   m_ObjectHideFlags: 0
